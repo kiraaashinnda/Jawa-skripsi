@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // let = bisa berubah tapi gaboleh declare lagi
+    // var = sama aja tapi jangan dipake di modern
+    // const = gabisa diubah
+    let nama = "Pascabowo";
+    console.log(nama);
+    var alamat = "Jakar(ta)";
+    console.log(nama);
+    const nilai = "11/100";
+    console.log(nilai);
+    // object
+    const peserta = {
+      nama: "Tono"
+    };
+    peserta.alamat = "KP.Sawah";
+    console.log(peserta);
+    const pesertaBaru = { ...peserta, nim: "31710" };
+    console.log(pesertaBaru);
+
+    //string
+    const nadep = "Pra ";
+    const nabel = "Biwi";
+    let contohliteral = `
+    nadep: ${nadep}
+    nabel: ${nabel}
+    `;
+    console.log(nadep + nabel);
+    console.log(contohliteral);
+
+    //oprator aritmatika
+    let a1 = 1;
+    let a2 = 1;
+    console.log(a1 + a2);
+    a1 += 9;
+    console.log(a1);
+
+    let user = "admin";
+    let pw = "12345678";
+
+    if (user === "eaeertsethsth" && pasword === "rwegawerg") {
+      console.log("sukses");
+    } else {
+      console.log("gagal");
+    }
+
+    //if tenary
+    //swich case
+    const useryay = "Joko";
+    switch (useryay) {
+      case "Anwar":
+        console.log("ini Anwar");
+        break;
+      case "Joko":
+        console.log("ini Joko");
+        break;
+      case "Wowo":
+        console.log("ini Wowo");
+        break;
+      default:
+        break;
+    }
+
+    //pungcon
+
+    const squareES6 = (x) => {
+      return x * x;
+    };
+    console.log(squareES6(2));
+
+    const squareES6Implicit = (x) => x * x;
+    console.log(squareES6Implicit(5));
+
+    const fruits = ["papaya", "mamaya", "buaya"];
+    const seemwabuah = fruits.map((fruits) => console.log(fruits));
+    const semwabuah = fruits.map((fruits) => (fruits));
+    console.log(semwabuah[0]);
+
+    for (let index = 1; index < 3; index++) {
+      console.log("Perulangan ke-" + index);
+    }
+
+    let nm = 1;
+    while (nm <= 5) {
+      console.log(`Ini Nomor ke- ${nm}`);
+      nm++;
+    }
+
+    let wiwaw = 1;
+
+    do {
+      console.log(`Nilai x = ${wiwaw}`);
+      wiwaw++;
+    } while (wiwaw <= 5);
+
+  </script>
+
+</body>
+
+</html>
