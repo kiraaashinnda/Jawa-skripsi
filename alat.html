@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let peserta = {
+      nama: "Reza",
+      alamat: "Bekasi Jawa Barat",
+      jurusan: "WebPro",
+    };
+    console.log(peserta.nama);
+    console.log(peserta.jurusan);
+    console.log(peserta["jurusan"]);
+
+    peserta.nilai = 90;
+    console.log(peserta);
+
+    delete peserta.nilai;
+    peserta.status = "Baru";
+    peserta["email"] = "abc@gmail.com";
+    console.log(peserta);
+
+    const siswa = [
+      {
+        id: 1,
+        nama: "Wawan",
+      },
+      {
+        id: 2,
+        nama: "janggo",
+      },
+      {
+        id: 3,
+        nama: "yopi",
+      },
+    ];
+
+    console.log(siswa);
+
+    siswa.forEach(function (ss, index) {
+      console.log("siswa", ss);
+    });
+    siswa.forEach((ss, index) => {
+      console.log(`dasis dengan index ${index} yaitu bernama ${ss.nama}`);
+
+    });
+
+    for (i = 0; i < 10;) {
+      console.log("hihihaha");
+    }
+
+  </script>
+</body>
+
+</html>
